@@ -7,7 +7,7 @@
         <meta name="description" content="This page is currently in developnment">
         <title>Romie School of Excellence</title>
         <link rel="icon" href="img/logo.png" type="image/x-icon">
-        <link rel="stylesheet" href="main.css" type="text/css">
+        <link rel="stylesheet" href="primiary/main.css" type="text/css">
     </head>
     <body>
         <header>
@@ -89,21 +89,88 @@
 
         <article id="contact">
             <h3>Submit Request</h3>
-            <p>Question, Send us your Query</p>
             <form action="https://httpbin.org/get" method="get">
+         <fieldset>
+            <legend>Question, Send your Query!</legend>
             <p>
-                <label for="firstName:">First Name</Label>
+                <label for="firstName">First Name</Label>
                 <input type="text" name="firstName" id="firstName" placeholder="Romeshwar" autocomplete="on" required="true">
             </p>
             <p>
-                <label for="lastName:">Last Name</Label>
+                <label for="lastName">Last Name</Label>
                 <input type="text" name="lastName" id="lastName" placeholder="Prasad" autocomplete="on" required="true">
             </p>
+            <p>
+                <label for="phone">Phone</Label>
+                <input type="tel" name="phone" id="phone" placeholder="+91-888-888-8888" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            </p>
+            <p>
+                <label for="dob">Date of Birth</Label>
+                <input type="number" name="dob" id="dob" min="1999" max="2018" step="1" value="2005">
+            </p>
+            <p>
+                <label for="method">Select Contact Method</label>
+                <select name="call" id="call">
+                    <optgroup label="Online">
+                        <option value="call">Call</option>
+                        <option value="mail">Mail</option>
+                        <option value="message">Message</option>
+                    </optgroup>
+                     <optgroup label="Offline">
+                            <option value="post">Get Letter</option>
+                            <option value="appoinment">Get appoinment</option>
+                        </otpgroup>
+            </select>
+            </p>
+        </fieldset>
+ <br>
+        <fieldset>
+            <legend>Guardian</legend>
+            <p>
+                <input type="radio" name="food" id="mother" value="mother">
+                <label for="tacos">Mother</label>
+            </p>
+            <p>
+                <input type="radio" name="food" id="father" value="father">
+                <label for="pizza">Father</label>
+            </p>
+            <p>
+                <input type="radio" name="food" id="other" value="other">
+                <label for="other">Other</label>
+            </p>
+        </fieldset>
+ <br>
+        <fieldset>
+            <legend> You are looking for?</legend>
+            <p>
+                <input type="checkbox" name="kidadmission" id="admission" value="admission">
+                <label for="child">Admission</label>
+            </p>
+            <p>
+                <input type="checkbox" name="kidinquiry" id="enquiry" value="enquiry">
+                <label for="enquiry">Enquiry</label>
+            </p>
+            <p>
+                <input type="checkbox" name="other" id="other" value="other">
+                <label for="other">Other</label>
+            </p>
+ <br>
+        <fieldset>
+            <legend>Message to us!</legend>
+            <label for="message">Your Message</label>
+            <br>
+            <textarea name="messa" id="message" cols="70" rows="10" placeholder="Type your message here"></textarea>
+        </fieldset>
+         </fieldset>
+         <br>
+                <button type="submit">Submit</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <button type="reset">Reset</button>
             </form>
         </article>
         <!--Early-Development Phase-->
      <footer>
-        <hr>
+<br>
         &lt; &copy; <a href="about.">Developed by Romeshwar Prasad</a> &gt; 
         <a href="https://play.google.com/store/apps/details?id=com.xcvate.android" target="blank"> 
            <br>
