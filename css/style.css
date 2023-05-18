@@ -1,0 +1,34 @@
+* {
+    margin: 0.3%;
+    padding: 0.3%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+    background: papayawhip;
+    color: rgb(0,0,0);
+}
+
+.container {
+    border: 10px double red;
+    font-size: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0.5em 2em 0.5em 2em;
+    padding: 1.5rem;
+    outline: 5px solid purple;
+    outline-offset: -10px;
+}
+
+main {
+    width: 50vw;
+    background: skyblue;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 2rem;
+    width: 70ch;
+}
